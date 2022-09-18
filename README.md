@@ -4,6 +4,11 @@ This project was bootstrapped with
 [從零開始在 Windows 使用 Node.js 打造專屬於你的 LINE Bot 聊天機器人](https://etrexkuo.medium.com/從零開始在-windows-使用-node-js-打造專屬於你的-line-bot-聊天機器人-173ac0f6be92)  
 `npx create-bottender-app bottender-test`
 
+[bottender.js.org/docs/](https://bottender.js.org/docs/)
+
+Life Bot > Messaging API
+
+Webhook URL `https://xxx-2022.ngrok.io/webhooks/line`
 
 ## Sending Feedback
 
