@@ -11,7 +11,8 @@ Life Bot > Messaging API
 
 Webhook URL `https://xxx-2022.ngrok.io/webhooks/line`
 
-https://line-bot-bottender.vercel.app/webhooks/line
+https://line-bot-bottender.vercel.app/webhooks/line  
+`https://<your-app-name>.<your-user-name>.now.sh/webhooks/line`  
 
 ## Sending Feedback
 

@@ -18,5 +18,10 @@
             "src": "/(.*)",
             "dest": "/server.js"
         }
-    ]
+    ],
+    "env": {
+      "LINE_ACCESS_TOKEN": "HSJlUcHc2KBZtUFgy5cCGTj/sn6+J4aNiOkfEENoFDHO+uA+E4m1x/Gx7LjwebNLzxZL5PIWZmwzr1E4XV8sKUupnrjvWMKEhtfT42w8AUAjTpAweoDrydmx9mgTzltnZ6Q25iXcTzM06fndIf3GPAdB04t89/1O/w1cDnyilFU=",
+      "LINE_CHANNEL_SECRET": "9011844c83569ac35ddf808d40d13202",
+      "DEBUG": "bottender*,messaging-api*"
+    }
 }
