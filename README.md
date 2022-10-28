@@ -1,6 +1,8 @@
 This project was bootstrapped with
 [Bottender](https://github.com/Yoctol/bottender) init script.
 
+[LINE 開發者管理後台](https://developers.line.biz/)
+
 [從零開始在 Windows 使用 Node.js 打造專屬於你的 LINE Bot 聊天機器人](https://etrexkuo.medium.com/從零開始在-windows-使用-node-js-打造專屬於你的-line-bot-聊天機器人-173ac0f6be92)  
 `npx create-bottender-app bottender-test`
 
