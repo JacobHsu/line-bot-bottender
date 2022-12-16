@@ -16,6 +16,16 @@ Webhook URL `https://xxx-2022.ngrok.io/webhooks/line`
 https://line-bot-bottender.vercel.app/webhooks/line  
 `https://<your-app-name>.<your-user-name>.now.sh/webhooks/line`  
 
+[OpenAI API](https://openai.com/api/)  
+[用 Node.js 建立你的第一個 LINE Bot 聊天機器人以 OpenAI GPT-3 為例](https://israynotarray.com/nodejs/20221210/1224824056)
+
+## Local
+
+`npm run dev`  
+
+line webhook URL: https://xxxxx.ngrok.io/webhooks/line  
+change Life Bot > Messaging API > Webhook URL  
+
 ## Sending Feedback
 
 Always feel free to open an issue to

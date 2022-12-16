@@ -1,11 +1,29 @@
+const { Configuration, OpenAIApi } = require('openai');
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+
 module.exports = async function HandleMessage(context) {
+
+  const completion = await openai.createCompletion({
+    model: 'text-davinci-003',
+    prompt: context.event.text ,
+    max_tokens: 200,
+  });
+
   switch (context.event.text) {
     case 'La':
     case 'la':
       T(context);
       return;
+    case 'Li':
+        await context.sendText('https://jacobhsu.tw/life');
+        return;
     default:
-      await context.sendText(context.event.text);
+      // await context.sendText(context.event.text); 
+      await context.sendText(completion.data.choices[0].text.trim());
       return 'default';
   }
 };
