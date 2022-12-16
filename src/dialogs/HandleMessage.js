@@ -19,8 +19,8 @@ module.exports = async function HandleMessage(context) {
       T(context);
       return;
     case 'Li':
-        await context.sendText('https://jacobhsu.tw/life');
-        return;
+      await context.sendText('https://jacobhsu.tw/life');
+      return;
     default:
       // await context.sendText(context.event.text); 
       await context.sendText(completion.data.choices[0].text.trim());
