@@ -7,12 +7,6 @@ const openai = new OpenAIApi(configuration);
 
 module.exports = async function HandleMessage(context) {
 
-  const completion = await openai.createCompletion({
-    model: 'text-davinci-003',
-    prompt: context.event.text ,
-    max_tokens: 200,
-  });
-
   switch (context.event.text) {
     case 'La':
     case 'la':
@@ -22,9 +16,17 @@ module.exports = async function HandleMessage(context) {
       await context.sendText('https://jacobhsu.tw/life');
       return;
     default:
-      // await context.sendText(context.event.text); 
-      await context.sendText(completion.data.choices[0].text.trim());
-      return 'default';
+      try {
+        const completion = await openai.createCompletion({
+          model: 'text-davinci-003',
+          prompt: context.event.text ,
+          max_tokens: 200,
+        });
+        await context.sendText(completion.data.choices[0].text.trim());
+      } catch (error) {
+        await context.sendText(error); 
+        return 'default';
+      }
   }
 };
 async function T(context) {
